@@ -1,9 +1,8 @@
 package com.example.demo.dto.out;
 
+import com.example.demo.dto.in.ShoeFilter;
 import lombok.Builder;
 import lombok.Getter;
-import lombok.Setter;
-import lombok.Value;
 
 import java.math.BigInteger;
 
@@ -11,11 +10,8 @@ import java.math.BigInteger;
 @Getter
 public class ShoeQuantity {
 
-    Shoe shoe;
+    private BigInteger size;
+    private ShoeFilter.Color color;
     private BigInteger quantity;
-
-    void setQuantity(BigInteger quantity) {
-        this.quantity = quantity;
-    }
 
 }

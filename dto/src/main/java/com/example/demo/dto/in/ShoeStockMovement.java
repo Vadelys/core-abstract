@@ -9,7 +9,7 @@ import java.util.List;
 
 @Value
 @Builder
-public class ShoeArrival {
+public class ShoeStockMovement {
 
     List<ShoeQuantity> shoeQuantities;
 
